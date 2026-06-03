@@ -66,7 +66,7 @@ input_data = np.array([float(med_inc), float(house_age), float(ave_rooms),
                         float(ave_bedrms), float(population), float(ave_occup), 
                         float(latitude), float(longitude)]).reshape(1, -1)
 input_scaled = scaler.transform(input_data)
-prediction = model.predict(input_scaled)
+prediction = model.predict(input_scaled)[0]
 
 st.divider()
 
