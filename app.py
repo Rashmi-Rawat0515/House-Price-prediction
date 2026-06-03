@@ -73,7 +73,7 @@ st.divider()
 # show prediction
 st.subheader("Predicted Price")
 col_a,col_b,col_c = st.columns(3)
-col_a.metric("Estimated Price",f"${prediction*100000:,.0f}")
+col_a.metric("Estimated Price",f"${prediction*100000:.0f}")
 col_b.metric("Model R2 Score",f"{round(r2, 3)}")
 col_c.metric("Model RMSE Score",f"{round(rmse, 3)}")
 
